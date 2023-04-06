@@ -1,0 +1,208 @@
+:root{
+
+    --ff-poppins:'Poppins', sans-serif;
+    --c-red:hsl(0, 78%, 62%);
+    --c-cyan:hsl(180, 62%, 55%);
+    --c-orange:hsl(34, 97%, 64%);
+    --c-blue:hsl(212, 86%, 64%);
+    --fc-title:hsl(234, 12%, 34%);
+    --fc-p:hsl(229, 6%, 66%);
+    --bc:hsl(0, 0%, 98%);
+
+}
+
+
+body{
+
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bc);
+    height: 100vh;
+    padding: 3rem 5rem;
+
+}
+
+.container{
+
+
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    
+
+}
+
+.header{
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    
+
+}
+
+.header h2{
+
+    color:var(--fc-title);
+    font-family: var(--ff-poppins);
+    font-weight: 200;
+    font-size: 2.2rem;
+
+}
+
+.header h1{
+
+    color:var(--fc-title);
+    font-family: var(--ff-poppins);
+    font-weight: 600;
+    font-size: 2.2rem;
+
+}
+
+
+.header p{
+
+    color:var(--fc-p);
+    font-family: var(--ff-poppins);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    width:60%;
+
+}
+
+
+.content{
+
+    display:flex;
+    gap:2rem;
+
+}
+
+.card{
+
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap:1rem;
+    width: 25rem;
+    
+    
+
+}
+
+.card h3{
+
+    color:var(--fc-title);
+    font-family: var(--ff-poppins);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.card p{
+
+    color:var(--fc-p);
+    font-family: var(--ff-poppins);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1rem;
+
+}
+
+.img{
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.card1{
+
+    border-top: 4px solid var(--c-cyan);
+
+}
+
+.card2{
+
+    border-top: 4px solid var(--c-red);
+
+}
+
+.card3{
+
+    border-top: 4px solid var(--c-orange);
+
+}
+
+.card4{
+
+    border-top: 4px solid var(--c-blue);
+
+}
+
+.box1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.box2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+
+}
+
+
+@media (max-width:800px){
+
+    .content{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    body{
+
+        padding:3rem 2rem;
+
+    }
+
+}
+
+@media (max-width:590px){
+
+  
+
+    .header h2{
+
+        font-size: 1.9rem;
+
+    }
+
+    .header h1{
+
+        font-size: 1.9rem;
+
+    }
+
+    .header p{
+
+        width:80%;
+        font-size: 0.9rem;
+
+    }
+
+}
